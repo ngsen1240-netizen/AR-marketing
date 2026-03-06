@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Khảo sát AR - Sensory Marketing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        body { margin: 0; background-color: #f4f4f4; font-family: sans-serif; }
+        model-viewer { width: 100%; height: 90vh; background-color: #ffffff; }
+        .instructions { padding: 10px; text-align: center; background: #000; color: #fff; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="instructions">Xoay để xem vân da. Nhấn nút bên dưới để đặt túi vào phòng bạn.</div>
+
+    <model-viewer 
+        src="lether_bag fix .glb" 
+        ios-src="lether_bag fix .usdz"
+        alt="Túi da cao cấp"
+        shadow-intensity="1" 
+        camera-controls 
+        auto-rotate 
+        ar 
+        ar-modes="webxr scene-viewer quick-look">
+        
+        <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1px solid #000; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 12px 24px; font-weight: bold;">
+          👜 XEM TRONG KHÔNG GIAN THỰC (AR)
+        </button>
+    </model-viewer>
+</body>
+</html>
